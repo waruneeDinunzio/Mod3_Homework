@@ -45,48 +45,51 @@ public class Calculator
 		option = input.nextInt();
 		//int options = input.nextInt();
 		//input.close();
-		switch (option) 
-		{
-		case 1:
-			System.out.print("enter your first number: ");
-			num1 = input.nextInt();
-			System.out.print("enter your second number: ");
-			num2 = input.nextInt();
-			System.out.println("The result is " + add( num1,num2));
-			System.out.println();
-			break;
-		case 2:
-			System.out.print("enter your first number: ");
-			num1 = input.nextInt();
-			System.out.print("enter your second number: ");
-			num2 = input.nextInt();
-			System.out.println("The result is " + subtract( num1,num2));
-			break;
-		case 3:
-			System.out.print("enter your first number: ");
-			num1 = input.nextInt();
-			System.out.print("enter your second number: ");
-			num2 = input.nextInt();
-			System.out.println("The result is " + multiple( num1, num2));
-			break;
-		case 4:
-			System.out.print("enter your first number: ");
-			num1 = input.nextInt();
-			System.out.print("enter your second number: ");
-			num2 = input.nextInt();
-			System.out.println("The result is " + divide( num1, num2));
-			break;
-		case 0:
-			System.exit(0);
-			break;
-		default:
-			System.out.println("Invalid Entry, Try Again");
-		}
+			switch (option) 
+			{
+			case 1:
+				System.out.print("enter your first number: ");
+				num1 = input.nextInt();
+				System.out.print("enter your second number: ");
+				num2 = input.nextInt();
+				System.out.println("The result is " + add( num1,num2));
+				System.out.println();
+				break;
+			case 2:
+				System.out.print("enter your first number: ");
+				num1 = input.nextInt();
+				System.out.print("enter your second number: ");
+				num2 = input.nextInt();
+				System.out.println("The result is " + subtract( num1,num2));
+				System.out.println();
+				break;
+			case 3:
+				System.out.print("enter your first number: ");
+				num1 = input.nextInt();
+				System.out.print("enter your second number: ");
+				num2 = input.nextInt();
+				System.out.println("The result is " + multiple( num1, num2));
+				System.out.println();
+				break;
+			case 4:
+				System.out.print("enter your first number: ");
+				num1 = input.nextInt();
+				System.out.print("enter your second number: ");
+				num2 = input.nextInt();
+				System.out.println("The result is " + divide( num1, num2));
+				System.out.println();
+				break;
+			case 0:
+				System.out.println("You're exit out from calculator program!");
+				System.exit(0);
+				break;
+			default:
+				System.out.println("Invalid Entry, Try Again");
+			}
 		} while (option != 0);
 		
 	}
 	
-
 		public static int add(int n1, int n2)
 		{
 			int result = n1 + n2;
@@ -107,7 +110,7 @@ public class Calculator
 			int result = n1 / n2;
 			return result;
 		}
-		}
+	}
 		
 		
 	

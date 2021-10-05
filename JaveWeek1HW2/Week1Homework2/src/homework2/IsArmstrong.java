@@ -2,12 +2,14 @@ package homework2;
 
 import java.util.Scanner;
 
-public class IsArmstrong {
 /*
  * 2. Determine whether a user entered number is an Armstrong number: Armstrong number is a three digits number 
 that is an integer that the sum of the cubes of its digits is equal to the number itself. 
 For example, 371 = 3**3 + 7**7 + 1**1 = 371  
  */
+
+public class IsArmstrong {
+
 	static boolean isArmstrong(int number) 
 	{
 		int temp, digits = 0, last = 0, sum = 0;

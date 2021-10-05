@@ -1,15 +1,13 @@
 package homework2;
 import java.util.Scanner;
 import java.lang.Math;
-public class Fibonnaci {
 
 /*
  * User entered inputs (Scanner): 
-
-1. Write Fibonnaci series between the user entered start and end values
-
-3. Write a program to see if a user entered string is a palindrome or not
+	1. Write Fibonnaci series between the user entered start and end values
 */
+
+public class Fibonnaci {
 	public static void main(String[] args) 
 	{
 	Scanner input = new Scanner(System.in);
@@ -39,14 +37,4 @@ public class Fibonnaci {
         }
     }
   
-    /* Driver Code
-    public static int (String args[])
-    {
-        // Given Number N
-        int N = 10;
-  
-        // Function Call
-        Fibonacci(N);
-    }*/
-
 }

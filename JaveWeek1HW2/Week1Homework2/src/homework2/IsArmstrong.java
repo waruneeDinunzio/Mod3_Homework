@@ -1,21 +1,13 @@
 package homework2;
+
 import java.util.Scanner;
-import java.lang.Math;
-public class UserInput {
 
+public class IsArmstrong {
 /*
- * User entered inputs (Scanner): 
-
-1. Write Fibonnaci series between the user entered start and end values
-
-2. Determine whether a user entered number is an Armstrong number: Armstrong number is a three digits number 
+ * 2. Determine whether a user entered number is an Armstrong number: Armstrong number is a three digits number 
 that is an integer that the sum of the cubes of its digits is equal to the number itself. 
 For example, 371 = 3**3 + 7**7 + 1**1 = 371  
-
-3. Write a program to see if a user entered string is a palindrome or not
-*/
-// 1.
-// 2.
+ */
 	static boolean isArmstrong(int number) 
 	{
 		int temp, digits = 0, last = 0, sum = 0;
@@ -53,13 +45,14 @@ For example, 371 = 3**3 + 7**7 + 1**1 = 371
 		num = input.nextInt();  
 		if(isArmstrong(num))  
 		{  
-		System.out.print("Armstrong ");  
+		System.out.print(num + " is an Armstrong number.");  
 		}  
 		else   
 		{  
-		System.out.print("Not Armstrong ");  
+		System.out.print(num + " is Not an Armstrong number.");  
 	
 	}
+		
 		System.exit(0);
 
 		}

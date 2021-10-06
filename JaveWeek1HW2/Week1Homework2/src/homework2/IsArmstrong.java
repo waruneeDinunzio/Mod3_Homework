@@ -14,6 +14,7 @@ public class IsArmstrong {
 	{
 		int temp, digits = 0, last = 0, sum = 0;
 		temp = number;
+		// find out how many digits
 		while ( temp > 0)
 		{
 			temp = temp/10;
@@ -37,13 +38,13 @@ public class IsArmstrong {
 		else return false;   
 		} 
 	
-		//driver code  
+		  
 		public static void  main(String args[])     
 		{     
 		int num;   
 		Scanner input = new Scanner(System.in);  
 		System.out.print("Enter the number: ");  
-		//reads the limit from the user  
+		// take user input as variable num  
 		num = input.nextInt();  
 		if(isArmstrong(num))  
 		{  

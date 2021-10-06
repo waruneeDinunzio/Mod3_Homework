@@ -29,7 +29,7 @@ public class Fibonnaci {
             // Print the number
             System.out.print(num1 + " ");
   
-            // Swap
+            // Swap numbers 
             int num3 = num2 + num1;
             num1 = num2;
             num2 = num3;

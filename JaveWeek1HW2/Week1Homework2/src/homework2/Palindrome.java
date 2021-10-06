@@ -7,6 +7,7 @@ public class Palindrome {
 	public static void main(String[] args) 
 	{
 	Scanner input = new Scanner(System.in);
+	// take user input
 	System.out.print("enter your string: ");
 	String inputString = input.nextLine();
 	if (IsPalindrome(inputString))
@@ -18,16 +19,14 @@ public class Palindrome {
 	public static boolean IsPalindrome(String str)
 	{
 		String reverseStr = "";
-		//String string = str;
 		int length = str.length();
+		// use for loop to compare string and reverse string
 		for ( int i = length-1; i>=0; i--)
 			reverseStr = reverseStr + str.charAt(i);
 		if (str.equals(reverseStr))
 			return true;
-			//System.out.println(str + " is a palindrome.");
 		else
 			return false;
-			//System.out.println(str + " is not a palindrome.");
 	}
 
 }

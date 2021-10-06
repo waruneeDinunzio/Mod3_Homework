@@ -43,7 +43,7 @@ public class Calculator
 		
 		System.out.print("Enter your Options: 1 = Add, 2 = Subtract, 3 = Multiple, 4 = Divide, 0 = Exit :");
 		option = input.nextInt();
-		//int options = input.nextInt();
+		
 		//input.close();
 			switch (option) 
 			{
